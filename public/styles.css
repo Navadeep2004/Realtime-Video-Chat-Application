@@ -11,7 +11,7 @@ body{
     padding: 10px;
     margin-left: 375px;
     margin-top: 20px;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(53, 52, 52) 99.4%);
+    background: radial-gradient(circle at 50.1% 68.8%, rgb(34, 34, 34) 0%, #282A3A 99.4%);
     margin-right: 290px;
     border-radius: 8px;
     text-align: center;
@@ -64,7 +64,7 @@ video{
 
 .main_controls{
     display: flex;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(53, 52, 52) 99.4%); 
+    background: radial-gradient(circle at 50.1% 68.8%, rgb(34, 34, 34) 0%, #282A3A 99.4%); 
     /* background-color: #90d5ec;
     background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 99%); red blue */
     /* background-color: #8989bb;
@@ -126,8 +126,8 @@ video{
     background-image: linear-gradient(147deg, #d7d7d7 0%, #353535 74%); */
     /* background: linear-gradient(to bottom, #434343 15%, black 90%); */
     /* background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(53, 52, 52) 99.4%); */
-    background-color: #6a93cb;
-    background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+    /* background-color: #000000; */
+    background-image: radial-gradient(circle at 50.1% 60.8%, #828078 0%, #958e69 99.4%);
     margin-top: 35px;
     margin-bottom: 35px;
     margin-right: 20px;
@@ -141,13 +141,14 @@ video{
     font-weight: 700;
     text-align: center;
     padding: 10px;
-    background-color: rgb(33, 127, 222);
+    /* background-color: #735F32; */
+    background-image: radial-gradient(circle at 50.1% 60.8%, #867b59 0%, #735F32 99.4%);
     margin-left: 60px;
     margin-right: 60px;
     margin-top: 15px;
     margin-bottom: 10px;
     border-radius: 8px;
-    box-shadow: 0px 0px 30px black;
+    box-shadow: 0px 0px 30px rgb(44, 42, 42);
 }
 
 .main_chat_window{
@@ -197,19 +198,19 @@ video{
 }
 
 .message{
-    background-color: rgb(84, 139, 195);
-    color: rgb(23, 23, 23);
-    border-radius: 5px;
+    background-color:#736f58;
+    color: rgb(43, 41, 41);
+    border-radius: 6px;
     padding-left:  8px;
     padding-top:5px;
     padding-bottom: 5px;
     padding-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    box-shadow: 0px 0px 10px rgb(37, 36, 36);
+    box-shadow: 0px 0px 15px black;
     border: 1px transparent black;
     width:max-content;
     max-width: 270px;
     word-wrap:break-word ;
-    text-shadow: 0px 0px 1px transparent;
+    text-shadow: 0px 0px 10px transparent;
 }

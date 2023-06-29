@@ -26,9 +26,7 @@ app.get('/:room', (req, res) => {
     res.render('room', { roomId: req.params.room });
 })
 
-server.listen(3030, () => {
-    console.log('Started listening!!');
-});
+
 
 // On connecting to a new client
 io.on('connection', socket => {
@@ -48,4 +46,6 @@ io.on('connection', socket => {
         })
     })
 })
+
+server.listen(process.env.PORT||3000)
 
