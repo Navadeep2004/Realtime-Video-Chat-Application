@@ -148,3 +148,14 @@ const setStopVideo=()=>{
     `
     document.querySelector('.main_video_button').innerHTML=html;  
 }
+
+const changeTheme=()=>{
+    console.log('object');
+    const css=document.getElementById('css');
+    console.log(css.href);
+    if(css.getAttribute("href")=="style.css"){
+        css.setAttribute("href","styles.css");
+    }else if(css.getAttribute("href")=="styles.css"){
+        css.setAttribute("href","style.css");
+    }
+}
