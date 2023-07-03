@@ -183,6 +183,10 @@ video{
     font-weight:500 ;
 }
 
+.main_message_container input:focus{
+    outline: none;
+}
+
 .messages{
     color: rgb(173, 172, 172);
     list-style: none;

@@ -12,6 +12,8 @@
 	<script src="https://kit.fontawesome.com/8e806f66e5.js" crossorigin="anonymous"></script>
     <script>
       const ROOM_ID = "<%= roomId %>";
+	  const USER_NAME = "<%= username %>";
+      const USER_ID = "<%= username %>";
     </script>
   </head>
 
@@ -44,8 +46,8 @@
 						<span class="remaining">Theme</span>
 					</div>
 					<div class="main_controls_button">
-						<i class="fas fa-shield-alt"></i>
-						<span class="remaining">security</span>
+						<i class="fa-solid fa-chalkboard-user"></i>
+						<span class="remaining">whiteboard</span>
 					</div>
 					<div class="main_controls_button">
 						<i class="fas fa-user-friends"></i>
@@ -58,7 +60,7 @@
 				</div>
 
 				<div class="main_controls_block">
-					<div class="main_controls_button">
+					<div onclick="leaveMeet()" class="main_controls_button">
 						<i class="fa-solid fa-person-running" style="color: #d71616; size: 30px;"></i>
 						<span class="leave_meeting" style="color: #d71616; size: 10px;">Leave meeting</span>
 					</div>
@@ -78,20 +80,12 @@
 			</div>
 			<div class="main_message_container">
 				<input name="chats" type="chat_message" type="text" placeholder="Type message here..">
+				<!-- <button class="main__send__message" type="submit">
+					<i class="fa-solid fa-paper-plane"></i>
+				</button> -->
 			</div>
 		</div>
     </div>
-
-
-    <!-- <div class="message__box">
-      <div class="messages"></div>
-      <input placeholder="Chat">
-    </div> -->
-
-    <!-- <div class="room__Id">
-      Room ID: <%= roomId %>
-    </div> -->
-
     <script src="script.js"></script>
   </body>
 

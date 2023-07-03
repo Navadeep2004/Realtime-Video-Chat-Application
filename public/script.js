@@ -1,12 +1,14 @@
+// const { use } = require("passport");
+
 const socket = io('/');
 const videoGrid = $('#video-grid');
 const myVideo = document.createElement('video');
-myVideo.muted = true;
+myVideo.muted = false;
 
 var peer = new Peer(undefined, {
     path: '/peerjs',
     host: '/',
-    port: '3000'
+    port: '5000'
 });
 
 let myVideoStream;
@@ -14,12 +16,14 @@ const peers = {}
 
 // On joining
 peer.on('open', (userId) => {
-    socket.emit('join-room', ROOM_ID, userId);
+    console.log(ROOM_ID);
+    socket.emit('join-room', ROOM_ID, userId,USER_NAME);
+    // USER_ID=userId;
 })
 
 navigator.mediaDevices.getUserMedia({
     video: true,
-    audio: false
+    audio: true
 }).then((stream) => {
     
     myVideoStream=stream;
@@ -36,7 +40,7 @@ navigator.mediaDevices.getUserMedia({
 
     // Adding new users vedio stream
     socket.on('user-connected', (userId) => {
-        connecToNewUser(userId, stream);
+        setTimeout(connectToNewUser,500,userId, stream);
     })
 })
 .catch((err) => console.log(err));
@@ -47,7 +51,7 @@ socket.on('user-disconnected', userId => {
 })
 
 // Function to add new User
-const connecToNewUser = (userId, stream) => {
+const connectToNewUser = (userId, stream) => {
     const call = peer.call(userId, stream);
     const video = document.createElement('video');
     call.on('stream', userVideoStream => {
@@ -83,8 +87,10 @@ $('html').keydown((e) => {
     }
 })
 
+
 socket.on('addNewMessage', message => {
-    $('.messages').append(`<li class = "message" ><b>User</b><br/>${message}</li>`);
+    $('.messages').append(`<li class = "message" ><b>${USER_NAME}</b><br/>${message}</li>`);
+    scrollToBottom();
 })
 
 //scroll feature
@@ -149,6 +155,8 @@ const setStopVideo=()=>{
     document.querySelector('.main_video_button').innerHTML=html;  
 }
 
+
+//changing theme
 const changeTheme=()=>{
     console.log('object');
     const css=document.getElementById('css');
@@ -158,4 +166,11 @@ const changeTheme=()=>{
     }else if(css.getAttribute("href")=="styles.css"){
         css.setAttribute("href","style.css");
     }
+}
+
+
+function leaveMeet() {
+    var backlen = history.length;
+    history.go(-backlen);
+    window.location.href = '/';
 }

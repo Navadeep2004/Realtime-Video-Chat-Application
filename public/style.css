@@ -1,20 +1,19 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #b8c6db;
-    background-image: radial-gradient(circle, #babfc7 0%, #6c6f72 74%);
+    background-color: #969aa1;
+    background-image: radial-gradient(circle, #75787c 0%, #54575a 99.4%);
 }
-
 .room_Id{
-    color: rgb(53, 52, 52);
+    color: rgb(163, 157, 157);
     padding: 10px;
     margin-left: 375px;
     margin-top: 20px;
-    background: radial-gradient(circle, #b0b2b2 10%, #7a7979 360%); 
+    background-color: #655e53; 
     margin-right: 290px;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0px 0px 50px black;
+    box-shadow: 0px 0px 20px black;
     font-size: smaller;
     width: fit-content;
 }
@@ -63,7 +62,7 @@ video{
 
 .main_controls{
     display: flex;
-    background: radial-gradient(circle, #b0b2b2 10%, #7a7979 360%); 
+    background: radial-gradient(circle, #5b5858 0%, #393737 99.4%); 
     /* background-color: #90d5ec;
     background-image: linear-gradient(315deg, #90d5ec 0%, #fc575e 99%); red blue */
     /* background-color: #8989bb;
@@ -78,7 +77,7 @@ video{
     border-radius: 10px;
     margin-top: 10px;
     justify-content: space-between;
-    box-shadow: 0px 0px 50px black;
+    box-shadow: 0px 0px 50px rgb(67, 65, 65);
 }
 
 .main_controls_block{
@@ -97,13 +96,13 @@ video{
 
 .main_controls_button i{
     font-size: 25px;
-    text-shadow: 0px 0px 40px rgb(0, 0, 0);
-    color: #3b3939;
+    text-shadow: 0px 0px 10px rgb(14, 14, 14);
+    color: #a29d9d;
 }
 
 .main_controls_button span{
-    text-shadow: 0px 0px 40px rgb(0, 0, 0);
-    color: #3b3939;
+    text-shadow: 0px 0px 10px rgb(14, 14, 14);
+    color: a29d9d;
 }
 
 .main_controls_button:hover{
@@ -121,7 +120,7 @@ video{
     flex-direction: column;
     /* background-color: #e7eff9;
     background-image :radial-gradient(circle farthest-side, #e7eff9 0%, #8894af 74%); */
-    background: radial-gradient(circle, #b0b2b2 10%, #7a7979 360%);
+    background: radial-gradient(circle, #5b5858 0%, #393737 99.4%); 
     margin-top: 35px;
     margin-bottom: 35px;
     margin-right: 20px;
@@ -131,7 +130,7 @@ video{
 }
 
 .main_header{
-    color: rgb(195, 191, 191);
+    color: rgb(163, 157, 157);
     font-weight: 700;
     text-align: center;
     padding: 10px;
@@ -141,7 +140,7 @@ video{
     margin-top: 15px;
     margin-bottom: 10px;
     border-radius: 8px;
-    box-shadow: 0px 0px 30px rgb(92, 88, 88);
+    box-shadow: 0px 0px 30px rgb(43, 42, 42);
 }
 
 .main_chat_window{
@@ -166,20 +165,24 @@ video{
     flex-grow: 1;
     background-color: transparent;
     border: 2px solid transparent;
-    color: rgb(49, 47, 47);
+    color: #b0a9a9;
     font-size:large;
     padding: 8px 8px;
     /* text-align: center; */
     border-radius: 8px;
     font-weight: 600;
-    box-shadow: 0px 0px 50px rgb(67, 65, 65); 
+    box-shadow: 0px 0px 50px rgb(21, 21, 21); 
     box-sizing: border-box;
 }
 
 .main_message_container input::placeholder{
-    color: #575353;
+    color: #b0a9a9;
     text-shadow: 0px 0px 1px rgb(67, 65, 65);
     font-weight:500 ;
+}
+
+.main_message_container input:focus{
+    outline: none;
 }
 
 .messages{
@@ -191,7 +194,7 @@ video{
 }
 
 .message{
-    background-color: #8c9093;
+    background-color: #746b62;
     color: rgb(23, 23, 23);
     border-radius: 5px;
     padding-left:  8px;
@@ -200,7 +203,7 @@ video{
     padding-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    box-shadow: 0px 0px 20px rgb(67, 65, 65);
+    box-shadow: 0px 0px 15px rgb(35, 35, 35);
     border: 1px transparent black;
     width:max-content;
     max-width: 270px;
