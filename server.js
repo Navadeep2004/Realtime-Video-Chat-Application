@@ -54,30 +54,6 @@ app.get('/:room', (req, res) => {
         res.render('not_login')
 })
 
-// let connections = [];
-// io.on('connect', (Socket) => {
-//     connections.push(Socket);
-//     console.log(`${Socket.id} has connected`);
-
-//     Socket.on('draw', (data) => {
-//         connections.forEach((con) => {
-//             if (con.id !== Socket.id)
-//                 con.emit("ondraw", { x: data.x, y: data.y });
-//         });
-
-//     })
-//     Socket.on('down', (data) => {
-//         connections.forEach((con) => {
-//             if (con.id !== Socket.id) {
-//                 con.emit('ondown', { x: data.x, y: data.y })
-//             };
-//         });
-//     });
-//     Socket.on('disconnect', (reason) => {
-//         connections = connections.filter((con) => con.id !== Socket.id);
-//     });
-// });
-
 // On connecting to a new client
 io.on('connection', socket => {
     socket.on('join-room', (roomId, userId,username) => {
