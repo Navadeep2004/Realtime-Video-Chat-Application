@@ -1,4 +1,4 @@
-# Vedio Chat Application
+# Video Chat Application
 
 
 This application provides a user-friendly interface that allows users to initiate video calls. Users can connect with family, friends, colleagues, or strangers, depending on their privacy settings and preferences. The application typically offers features such as one-on-one video calls, group video calls, and instant messaging, during the chat session using Google authentication
