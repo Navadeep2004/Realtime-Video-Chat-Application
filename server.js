@@ -54,6 +54,7 @@ app.get('/:room', (req, res) => {
         res.render('not_login')
 })
 
+
 // On connecting to a new client
 io.on('connection', socket => {
     socket.on('join-room', (roomId, userId,username) => {
