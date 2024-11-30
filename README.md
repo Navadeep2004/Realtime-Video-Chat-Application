@@ -30,11 +30,11 @@ This application is built using the PeerJS library, socket.io and Node.JS librar
 
 ![254037790-a032202a-0613-4fb4-b0b4-e84b380b8146](https://github.com/BHOGISAISATHWIK/REALTIME-VIDEO_CALL-CHATTING-WEBSITE/assets/95133901/05bbf7f1-c030-47b5-a970-48eeadaf34ea)
 
-![Screenshot 2023-09-25 091719](https://github.com/BHOGISAISATHWIK/REALTIME-VIDEO_CALL-CHATTING-WEBSITE/assets/95133901/deaf8d5a-c3c3-47f4-ab35-0c30ee2267e3)
+![WhatsApp Image 2024-11-30 at 13 11 08_ba3f3518](https://github.com/user-attachments/assets/9b696ffb-d3e6-420b-a438-347df9820ebb)
+![WhatsApp Image 2024-11-30 at 13 12 57_14846935](https://github.com/user-attachments/assets/55cf4daf-0462-4302-b4fb-732611f8db6e)
+![WhatsApp Image 2024-11-30 at 13 13 27_41f54005](https://github.com/user-attachments/assets/e467b37d-b740-4c3a-a981-e257eabe062e)
 
-![Screenshot 2023-09-25 092000](https://github.com/BHOGISAISATHWIK/REALTIME-VIDEO_CALL-CHATTING-WEBSITE/assets/95133901/786e7005-f073-4f54-8e8f-36f47023f6eb)
 
-![Screenshot 2023-09-25 091939](https://github.com/BHOGISAISATHWIK/REALTIME-VIDEO_CALL-CHATTING-WEBSITE/assets/95133901/8c187531-4df2-4199-8210-a0baff41a629)
 
 ## Prerequisites
 
@@ -53,7 +53,7 @@ Install [node.js](https://nodejs.org/en/) in your machine
 1. Clone the project
 
 bash
-    git clone https://github.com/BHOGISAISATHWIK/REALTIME-VIDEO_CALL-CHATTING-WEBSITE
+    git clone https://github.com/Navadeep2004/Realtime-Video-Chat-Application.git
 
 
 or download the zip file.
